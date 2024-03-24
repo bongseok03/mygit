@@ -7,12 +7,11 @@ using namespace std;
 int main()
 {
    char Tictactoe[3][3];
-   int x, y, k, i = 0;
+   int x, y, k, w, i = 0;
    
    for (x = 0; x < 3; x++)
        
-       for (y = 0; y < 3; y++) Tictactoe[x][y] = '  ';
-        // 판을 초기화하는 부분
+       for (y = 0; y < 3; y++) Tictactoe[x][y] = '  ';// 판을 초기화하는 부분
 
    for (k = 0; k < 9; k++)
    {
@@ -38,7 +37,7 @@ int main()
             
              cout << Tictactoe[i][0] << endl;
                 
-               break;
+               w = 1;
              
          }
          
@@ -48,7 +47,7 @@ int main()
             
              cout << Tictactoe[0][i] << endl;
                 
-               break;
+               w = 2;
              
          }
          
@@ -58,7 +57,7 @@ int main()
             
              cout << Tictactoe[0][0] << endl;
                 
-               break;
+               w = 3;
              
          }
          
@@ -68,14 +67,36 @@ int main()
             
              cout << Tictactoe[0][2] << endl;
             
-               break;
+               w = 4;
              
          }
             
       }
 
-      if ()
+      if (w == 1)
+      {
+         cout << "가 가로줄 완성!" << endl;
+         break;
+      }
       
+      if (w == 2)
+      {
+         cout << "세로줄 완성!" << endl;
+         break;
+      }
+      
+      if (w == 3)
+      {
+         cout << "대각선줄 완성!" << endl;
+         break;
+      }
+
+       if (w == 4)
+      {
+         cout << "대각선줄 완성!" << endl;
+         break;
+      }
+     
       if (k == 8) // 판이 꽉 차도 승자가 없을 때
       {
          cout << "무승부" << endl;
