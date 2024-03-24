@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
    char Tictactoe[3][3];
-   int x, y, k, i;
+   int x, y, k, i = 0;
    
    for (x = 0; x < 3; x++)
        
@@ -37,7 +37,8 @@ int main()
          {
             
              cout << Tictactoe[i][0] << endl;
-                break;
+                
+               break;
              
          }
          
@@ -46,7 +47,8 @@ int main()
          {
             
              cout << Tictactoe[0][i] << endl;
-                break;
+                
+               break;
              
          }
          
@@ -55,7 +57,8 @@ int main()
          {
             
              cout << Tictactoe[0][0] << endl;
-                break;
+                
+               break;
              
          }
          
@@ -64,13 +67,16 @@ int main()
          {
             
              cout << Tictactoe[0][2] << endl;
-                break;
+            
+               break;
              
          }
             
       }
+
+      if ()
       
-      if (k == 8) // 판이 꽉 찼을때
+      if (k == 8) // 판이 꽉 차도 승자가 없을 때
       {
          cout << "무승부" << endl;
       }
