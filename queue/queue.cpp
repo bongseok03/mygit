@@ -2,7 +2,7 @@
 #include <string>
 #include <time.h>
 
-#define size 10
+#define size 5
 
 using namespace std;
 
@@ -66,7 +66,7 @@ void Queue::enqueue(int c)
    } 
 
    rear += 1;
-   cout << "\n뒤로 보낼 숫자를 적으시오" << endl;
+   cout << "뒤로 보낼 숫자를 적으시오" << endl;
    cin >> c;
    Q[rear] = c;
    
